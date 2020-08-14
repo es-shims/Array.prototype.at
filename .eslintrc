@@ -2,4 +2,18 @@
 	"root": true,
 
 	"extends": "@ljharb",
+
+	"rules": {
+		"id-length": 0,
+		"new-cap": [2, {
+			"capIsNewExceptions": [
+				"Get",
+				"LengthOfArrayLike",
+				"RequireObjectCoercible",
+				"ToInteger",
+				"ToObject",
+				"ToString",
+			],
+		}],
+	},
 }
