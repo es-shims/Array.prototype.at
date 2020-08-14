@@ -1,0 +1,40 @@
+{
+	"name": "array.prototype.item",
+	"version": "0.0.0",
+	"description": "An ES-spec-compliant (proposed) Array.prototype.item shim/polyfill/replacement that works as far down as ES3",
+	"main": "index.js",
+	"exports": {
+		".": [
+			{
+				"import": "./index.mjs",
+				"require": "./index.js",
+				"default": "./index.js"
+			},
+			"./index.js"
+		],
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/es-shims/Array.prototype.item.git"
+	},
+	"keywords": [
+		"Array.prototype.item",
+		"String.prototype.item",
+		"item",
+		"array",
+		"shim",
+		"polyfill",
+		"es-shim",
+		"API"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/es-shims/Array.prototype.item/issues"
+	},
+	"homepage": "https://github.com/es-shims/Array.prototype.item#readme"
+}
