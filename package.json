@@ -43,7 +43,10 @@
 		"prepublish": "safe-publish-latest",
 		"pretest": "npm run lint",
 		"lint": "eslint --ext=js,mjs .",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"tests-only": "tape 'test/**/*.js'",
+		"tests-esm": "node test/index.mjs",
+		"test": "npm run tests-only && npm run tests-esm",
+		"posttest": "aud --production"
 	},
 	"repository": {
 		"type": "git",
@@ -70,8 +73,12 @@
 	"homepage": "https://github.com/es-shims/Array.prototype.item#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^17.1.0",
+		"aud": "^1.1.2",
 		"eslint": "^7.7.0",
-		"safe-publish-latest": "^1.1.4"
+		"functions-have-names": "^1.2.1",
+		"has-strict-mode": "^1.0.0",
+		"safe-publish-latest": "^1.1.4",
+		"tape": "^5.0.1"
 	},
 	"dependencies": {
 		"define-properties": "^1.1.3",
