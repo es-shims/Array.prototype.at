@@ -1,6 +1,6 @@
 {
 	"name": "array.prototype.item",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "An ES-spec-compliant (proposed) Array.prototype.item shim/polyfill/replacement that works as far down as ES3",
 	"main": "index.js",
 	"exports": {
