@@ -1,0 +1,19 @@
+version: ~> 1.0
+language: node_js
+os:
+ - linux
+import:
+ - ljharb/travis-ci:node/all.yml
+ - ljharb/travis-ci:node/pretest.yml
+ - ljharb/travis-ci:node/posttest.yml
+matrix:
+  include:
+    - node_js: "lts/*"
+      script: 'npm run tests-esm'
+      env: TEST=true ESM=true
+    - node_js: "13.7"
+      script: 'npm run tests-esm'
+      env: TEST=true ESM=true
+    - node_js: "12.17"
+      script: 'npm run tests-esm'
+      env: TEST=true ESM=true
