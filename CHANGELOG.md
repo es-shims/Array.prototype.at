@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.0](https://github.com/es-shims/Array.prototype.item/compare/v0.1.0...v1.0.0) - 2020-09-21
+
+### Commits
+
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `auto-changelog` [`9c656a8`](https://github.com/es-shims/Array.prototype.item/commit/9c656a8ddab82c9f047bb1efa0523cc63d3fded7)
+
 ## v0.1.0 - 2020-08-14
 
 ### Commits
