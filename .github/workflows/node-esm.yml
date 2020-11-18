@@ -1,0 +1,31 @@
+name: 'Tests: node.js (ESM)'
+
+on: [pull_request, push]
+
+jobs:
+  latest:
+    name: 'notable ESM minors'
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        include:
+          - node-version: 'lts/*'
+          - node-version: '14.13'
+          - node-version: '13.7'
+          - node-version: '12.17'
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ljharb/actions/node/run@main
+        name: 'npm install && npm run tests-esm'
+        with:
+          node-version: ${{ matrix.node-version }}
+          shell-command: 'npm run tests-esm'
+
+  node:
+    name: 'node, notable ESM minors'
+    needs: [latest]
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo tests completed'
