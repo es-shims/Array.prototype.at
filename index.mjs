@@ -1,4 +1,4 @@
-import callBind from 'es-abstract/helpers/callBind.js';
+import callBind from 'call-bind';
 import RequireObjectCoercible from 'es-abstract/2020/RequireObjectCoercible.js';
 
 import getPolyfill from 'array.prototype.item/polyfill';
