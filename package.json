@@ -43,8 +43,8 @@
 		"prepublish": "safe-publish-latest",
 		"pretest": "npm run lint",
 		"lint": "eslint --ext=js,mjs .",
-		"tests-only": "tape 'test/**/*.js'",
-		"tests-esm": "node test/index.mjs",
+		"tests-only": "nyc tape 'test/**/*.js'",
+		"tests-esm": "nyc node test/index.mjs",
 		"test": "npm run tests-only && npm run tests-esm",
 		"posttest": "aud --production",
 		"version": "auto-changelog && git add CHANGELOG.md",
@@ -80,6 +80,7 @@
 		"eslint": "^7.9.0",
 		"functions-have-names": "^1.2.1",
 		"has-strict-mode": "^1.0.0",
+		"nyc": "^10.3.2",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.0.1"
 	},
