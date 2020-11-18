@@ -3,5 +3,5 @@
 var implementation = require('./implementation');
 
 module.exports = function getPolyfill() {
-	return Array.prototype.item || implementation;
+	return Array.prototype.at || implementation;
 };

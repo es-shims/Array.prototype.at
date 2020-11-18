@@ -1,7 +1,7 @@
 {
-	"name": "array.prototype.item",
-	"version": "1.0.0",
-	"description": "An ES-spec-compliant (proposed) Array.prototype.item shim/polyfill/replacement that works as far down as ES3",
+	"name": "array.prototype.at",
+	"version": "0.0.0",
+	"description": "An ES-spec-compliant (proposed) Array.prototype.at shim/polyfill/replacement that works as far down as ES3",
 	"main": "index.js",
 	"exports": {
 		".": [
@@ -52,12 +52,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/es-shims/Array.prototype.item.git"
+		"url": "git+https://github.com/es-shims/Array.prototype.at.git"
 	},
 	"keywords": [
+		"Array.prototype.at",
 		"Array.prototype.item",
+		"String.prototype.at",
 		"String.prototype.item",
 		"item",
+		"at",
 		"array",
 		"shim",
 		"polyfill",
@@ -70,9 +73,9 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/es-shims/Array.prototype.item/issues"
+		"url": "https://github.com/es-shims/Array.prototype.at/issues"
 	},
-	"homepage": "https://github.com/es-shims/Array.prototype.item#readme",
+	"homepage": "https://github.com/es-shims/Array.prototype.at#readme",
 	"devDependencies": {
 		"@ljharb/eslint-config": "^17.2.0",
 		"aud": "^1.1.3",

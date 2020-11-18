@@ -8,14 +8,14 @@ var getPolyfill = require('./polyfill');
 var polyfill = getPolyfill();
 var shim = require('./shim');
 
-var boundItemShim = function item(array, index) {
+var boundShim = function at(array, index) {
 	RequireObjectCoercible(array);
 	return polyfill.call(array, index);
 };
-define(boundItemShim, {
+define(boundShim, {
 	getPolyfill: getPolyfill,
 	implementation: implementation,
 	shim: shim
 });
 
-module.exports = boundItemShim;
+module.exports = boundShim;

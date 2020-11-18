@@ -6,7 +6,7 @@ var ToInteger = require('es-abstract/2020/ToInteger');
 var ToObject = require('es-abstract/2020/ToObject');
 var ToString = require('es-abstract/2020/ToString');
 
-module.exports = function item(index) {
+module.exports = function at(index) {
 	var O = ToObject(this);
 
 	var len = LengthOfArrayLike(O);

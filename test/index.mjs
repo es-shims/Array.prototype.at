@@ -1,31 +1,31 @@
-import item from 'array.prototype.item';
-import * as itemModule from 'array.prototype.item';
+import at from 'array.prototype.at';
+import * as atModule from 'array.prototype.at';
 import test from 'tape';
 import runTests from './tests.js';
 
 test('as a function', (t) => {
 	t.test('bad array/this value', (st) => {
-		st.throws(() => item(undefined), TypeError, 'undefined is not an object');
-		st.throws(() => item(null), TypeError, 'null is not an object');
+		st.throws(() => at(undefined), TypeError, 'undefined is not an object');
+		st.throws(() => at(null), TypeError, 'null is not an object');
 		st.end();
 	});
 
-	runTests(item, t);
+	runTests(at, t);
 
 	t.end();
 });
 
 test('named exports', async (t) => {
 	t.deepEqual(
-		Object.keys(itemModule).sort(),
+		Object.keys(atModule).sort(),
 		['default', 'shim', 'getPolyfill', 'implementation'].sort(),
 		'has expected named exports'
 	);
 
-	const { shim, getPolyfill, implementation } = itemModule;
-	t.equal(await import('array.prototype.item/shim'), shim, 'shim named export matches deep export');
-	t.equal(await import('array.prototype.item/implementation'), implementation, 'implementation named export matches deep export');
-	t.equal(await import('array.prototype.item/polyfill'), getPolyfill, 'getPolyfill named export matches deep export');
+	const { shim, getPolyfill, implementation } = atModule;
+	t.equal(await import('array.prototype.at/shim'), shim, 'shim named export matches deep export');
+	t.equal(await import('array.prototype.at/implementation'), implementation, 'implementation named export matches deep export');
+	t.equal(await import('array.prototype.at/polyfill'), getPolyfill, 'getPolyfill named export matches deep export');
 
 	t.end();
 });
