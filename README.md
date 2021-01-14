@@ -10,7 +10,7 @@
 
 An ESnext spec-compliant `Array.prototype.at` shim/polyfill/replacement that works as far down as ES3.
 
-This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the proposed [spec](https://tc39.es/proposal-item-method/).
+This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the proposed [spec](https://github.com/tc39/proposal-relative-indexing-method).
 
 Because `Array.prototype.at` depends on a receiver (the `this` value), the main export takes the array to operate on as the first argument.
 
