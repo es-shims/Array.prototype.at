@@ -40,7 +40,8 @@
 		"./package.json": "./package.json"
 	},
 	"scripts": {
-		"prepublish": "safe-publish-latest",
+		"prepublish": "not-in-publish || npm run prepublishOnly",
+		"prepublishOnly": "safe-publish-latest",
 		"pretest": "npm run lint",
 		"lint": "eslint --ext=js,mjs .",
 		"tests-only": "nyc tape 'test/**/*.js'",
