@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.2](https://github.com/es-shims/Array.prototype.at/compare/v1.0.1...v1.0.2) - 2021-07-29
+
+### Commits
+
+- [actions] use `node/install` instead of `node/run`; use `codecov` action [`b4af027`](https://github.com/es-shims/Array.prototype.at/commit/b4af027a0006afd39698b95ab4f311e08c661345)
+- [readme] remove travis badge [`b132350`](https://github.com/es-shims/Array.prototype.at/commit/b1323509f258d84f9e6f73bb29cab419baf4a310)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape` [`b3c0da0`](https://github.com/es-shims/Array.prototype.at/commit/b3c0da0c12cb90340f103d396f3fd2c29ab2d266)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `tape` [`091a76d`](https://github.com/es-shims/Array.prototype.at/commit/091a76d64ce8196f47f7b49c2b0243b0877cc1bc)
+- [actions] update workflows [`f8d3842`](https://github.com/es-shims/Array.prototype.at/commit/f8d3842d30fc5030cd0fe662b32db9334a557c5c)
+- [readme] add github actions/codecov badges [`b865889`](https://github.com/es-shims/Array.prototype.at/commit/b86588935f7afc5dcf504e712bb01c6006eb36ed)
+- [actions] avoid failing fast [`556768e`](https://github.com/es-shims/Array.prototype.at/commit/556768ea15585e2172ee8a5076ea38abd5fa5cdb)
+- [Deps] update `es-abstract` [`a23efc0`](https://github.com/es-shims/Array.prototype.at/commit/a23efc0b4b036c0094622238fa4e0b00f2c976aa)
+- [Dev Deps] update `eslint`, `tape` [`68c753b`](https://github.com/es-shims/Array.prototype.at/commit/68c753bb919a62154908a4501c2a9fdd6d4f5057)
+- [meta] use `prepublishOnly`, for npm 7+ [`2ee454b`](https://github.com/es-shims/Array.prototype.at/commit/2ee454b614c05267085cbcddb78b48feeded88da)
+- [Tests] increase coverage [`6e76301`](https://github.com/es-shims/Array.prototype.at/commit/6e763012b721444ad16d23b949d8ec96c0e2f716)
+- [Deps] update `es-abstract` [`e9672de`](https://github.com/es-shims/Array.prototype.at/commit/e9672deb8361cc95c51ee60cb4c2c9f3b523464c)
+- [Deps] update `es-abstract` [`4686db5`](https://github.com/es-shims/Array.prototype.at/commit/4686db562857d614ae52dcc249b33779402795b7)
+
 ## [v1.0.1](https://github.com/es-shims/Array.prototype.at/compare/v1.0.0...v1.0.1) - 2021-01-14
 
 ### Commits

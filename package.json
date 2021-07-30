@@ -1,6 +1,6 @@
 {
 	"name": "array.prototype.at",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "An ES-spec-compliant (proposed) Array.prototype.at shim/polyfill/replacement that works as far down as ES3",
 	"main": "index.js",
 	"exports": {
