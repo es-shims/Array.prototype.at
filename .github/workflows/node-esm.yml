@@ -18,11 +18,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: ljharb/actions/node/run@main
+      - uses: ljharb/actions/node/install@main
         name: 'npm install && npm run tests-esm'
         with:
           node-version: ${{ matrix.node-version }}
-          shell-command: 'npm run tests-esm'
+      - run: npm run tests-esm
+      - uses: codecov/codecov-action@v1
 
   node:
     name: 'node, notable ESM minors'
