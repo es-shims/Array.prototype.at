@@ -16,6 +16,9 @@ module.exports = function (at, t) {
 		st.equal(at(arr, 3), undefined);
 		st.equal(at(arr, -4), undefined);
 
+		st.equal(at(arr, Infinity), undefined);
+		st.equal(at(arr, -Infinity), undefined);
+
 		st.equal(at([], 0), undefined);
 		st.equal(at([], -1), undefined);
 
