@@ -1,17 +1,17 @@
 'use strict';
 
-var Get = require('es-abstract/2020/Get');
-var LengthOfArrayLike = require('es-abstract/2020/LengthOfArrayLike');
-var ToInteger = require('es-abstract/2020/ToInteger');
-var ToObject = require('es-abstract/2020/ToObject');
-var ToString = require('es-abstract/2020/ToString');
+var Get = require('es-abstract/2021/Get');
+var LengthOfArrayLike = require('es-abstract/2021/LengthOfArrayLike');
+var ToIntegerOrInfinity = require('es-abstract/2021/ToIntegerOrInfinity');
+var ToObject = require('es-abstract/2021/ToObject');
+var ToString = require('es-abstract/2021/ToString');
 
 module.exports = function at(index) {
 	var O = ToObject(this);
 
 	var len = LengthOfArrayLike(O);
 
-	var relativeIndex = ToInteger(index);
+	var relativeIndex = ToIntegerOrInfinity(index);
 
 	var k = relativeIndex >= 0 ? relativeIndex : len + relativeIndex;
 

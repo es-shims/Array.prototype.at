@@ -10,7 +10,7 @@
 				"Get",
 				"LengthOfArrayLike",
 				"RequireObjectCoercible",
-				"ToInteger",
+				"ToIntegerOrInfinity",
 				"ToObject",
 				"ToString",
 			],
