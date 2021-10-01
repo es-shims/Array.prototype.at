@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.3](https://github.com/es-shims/Array.prototype.at/compare/v1.0.2...v1.0.3) - 2021-09-30
+
+### Commits
+
+- [Refactor] remove ESM entry points [`667d2b9`](https://github.com/es-shims/Array.prototype.at/commit/667d2b94aadfdbfd9e958c263c886a92b3b65965)
+- [Tests] add cases for Infinities; increase coverage [`5158d4d`](https://github.com/es-shims/Array.prototype.at/commit/5158d4d1bd19ac1b6bb7d5a1f1e07dcf622020af)
+- [Deps] update `es-abstract` [`32dec9f`](https://github.com/es-shims/Array.prototype.at/commit/32dec9fd71c97cf9cdca379167d7d29dc6858a63)
+- [actions] use `node/install` instead of `node/run`; use `codecov` action [`6b9167b`](https://github.com/es-shims/Array.prototype.at/commit/6b9167bb8351a6b0ff8c6fcf2e08ece3ea61a072)
+- [Dev Deps] update `eslint`, `tape` [`be5df6a`](https://github.com/es-shims/Array.prototype.at/commit/be5df6a638f18e3069ebc5c9ecb4b524ffa2ec61)
+- [Fix] ESM: ensure that imports work with es-abstract [`2661b6e`](https://github.com/es-shims/Array.prototype.at/commit/2661b6e34f4dadec2caf6ce56f2d9219dbac94dd)
+- [Dev Deps] update `@ljharb/eslint-config` [`59d59a8`](https://github.com/es-shims/Array.prototype.at/commit/59d59a898401fd797042da4a659a1a60e939064b)
+- [Deps] update `es-abstract` [`fe9ce35`](https://github.com/es-shims/Array.prototype.at/commit/fe9ce351f2ed75679bcaaeb90da35cb6d5d6934b)
+
 ## [v1.0.2](https://github.com/es-shims/Array.prototype.at/compare/v1.0.1...v1.0.2) - 2021-07-29
 
 ### Commits
