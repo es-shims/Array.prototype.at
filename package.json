@@ -78,7 +78,7 @@
 	},
 	"homepage": "https://github.com/es-shims/Array.prototype.at#readme",
 	"devDependencies": {
-		"@ljharb/eslint-config": "^17.6.0",
+		"@ljharb/eslint-config": "^18.0.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
 		"eslint": "^7.32.0",
