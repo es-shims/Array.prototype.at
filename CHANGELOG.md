@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.0](https://github.com/es-shims/Array.prototype.at/compare/v1.0.3...v1.1.0) - 2022-04-11
+
+### Commits
+
+- [actions] reuse common workflows [`9c1bb77`](https://github.com/es-shims/Array.prototype.at/commit/9c1bb77ab96fa49ecbdc1b165582d7644112bdea)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `safe-publish-latest`, `tape` [`0c09344`](https://github.com/es-shims/Array.prototype.at/commit/0c093448390f366ff1518361378b5c377e6acf45)
+- [actions] update codecov uploader [`83aa293`](https://github.com/es-shims/Array.prototype.at/commit/83aa2933353015e7385464d96bcbe92740a07be5)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape` [`bf6ad69`](https://github.com/es-shims/Array.prototype.at/commit/bf6ad69d08818237b09c4b8079bd06bf0499ff0e)
+- [New] `shim`/`auto`: add `at` to `Symbol.unscopables` [`7d9840f`](https://github.com/es-shims/Array.prototype.at/commit/7d9840f124331582a597ec2c57070e29ff739977)
+- [Deps] update `es-abstract` [`3ff5bb3`](https://github.com/es-shims/Array.prototype.at/commit/3ff5bb35381015b807be56b8fceee3b439475dbb)
+- [Deps] update `es-abstract` [`8dd0858`](https://github.com/es-shims/Array.prototype.at/commit/8dd0858910e7ecb7ed2df7b18340b5e4412fb3f3)
+
 ## [v1.0.3](https://github.com/es-shims/Array.prototype.at/compare/v1.0.2...v1.0.3) - 2021-09-30
 
 ### Commits
