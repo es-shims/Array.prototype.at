@@ -23,6 +23,7 @@
 		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"prepublishOnly": "safe-publish-latest",
 		"pretest": "npm run lint",
+		"prelint": "es-shim-api --bound",
 		"lint": "eslint --ext=js,mjs .",
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"tests-esm": "nyc node test/index.mjs",
@@ -58,6 +59,7 @@
 	},
 	"homepage": "https://github.com/es-shims/Array.prototype.at#readme",
 	"devDependencies": {
+		"@es-shims/api": "^2.4.2",
 		"@ljharb/eslint-config": "^21.0.0",
 		"aud": "^2.0.1",
 		"auto-changelog": "^2.4.0",
