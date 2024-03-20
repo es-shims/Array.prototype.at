@@ -4,7 +4,7 @@ require('../auto');
 
 var test = require('tape');
 var defineProperties = require('define-properties');
-var bind = require('function-bind');
+var callBind = require('call-bind');
 var isEnumerable = Object.prototype.propertyIsEnumerable;
 var functionsHaveNames = require('functions-have-names')();
 var hasStrictMode = require('has-strict-mode')();
@@ -29,7 +29,7 @@ test('shimmed', function (t) {
 		st.end();
 	});
 
-	runTests(bind.call(Function.call, Array.prototype.at), t);
+	runTests(callBind(Array.prototype.at), t);
 
 	t.end();
 });
