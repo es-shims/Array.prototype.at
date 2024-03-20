@@ -4,14 +4,7 @@
 	"description": "An ES-spec-compliant (proposed) Array.prototype.at shim/polyfill/replacement that works as far down as ES3",
 	"main": "index.js",
 	"exports": {
-		".": [
-			{
-				"import": "./index.mjs",
-				"require": "./index.js",
-				"default": "./index.js"
-			},
-			"./index.js"
-		],
+		".": "./index.js",
 		"./auto": "./auto.js",
 		"./polyfill": "./polyfill.js",
 		"./implementation": "./implementation.js",
@@ -26,8 +19,7 @@
 		"prelint": "es-shim-api --bound",
 		"lint": "eslint --ext=js,mjs .",
 		"tests-only": "nyc tape 'test/**/*.js'",
-		"tests-esm": "nyc node test/index.mjs",
-		"test": "npm run tests-only && npm run tests-esm",
+		"test": "npm run tests-only",
 		"posttest": "aud --production",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""

@@ -1,9 +1,0 @@
-name: 'Tests: node.js (ESM)'
-
-on: [pull_request, push]
-
-jobs:
-  tests:
-    uses: ljharb/actions/.github/workflows/node-esm.yml@main
-    with:
-      command: npm run tests-esm
