@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.3](https://github.com/es-shims/Array.prototype.at/compare/v1.1.2...v1.1.3) - 2024-03-20
+
+### Commits
+
+- [meta] remove useless ESM [`daf1ca5`](https://github.com/es-shims/Array.prototype.at/commit/daf1ca51cabb1824f153e47352c4ffed0329ebd0)
+- [Deps] update `call-bind`, `define-properties`, `es-abstract`, `es-shim-unscopables` [`22017f8`](https://github.com/es-shims/Array.prototype.at/commit/22017f84062858c18c272ca260813ed895e03411)
+- [actions] use reusable workflows [`3b03a03`](https://github.com/es-shims/Array.prototype.at/commit/3b03a03817edd6d5a7bcdecab1dae265929fc278)
+- [Dev Deps] update `aud`, `npmignore`, `tape` [`ec13284`](https://github.com/es-shims/Array.prototype.at/commit/ec132845347cfdeb553777842b519f87615b557c)
+- [Refactor] use `es-object-atoms` where possible [`7ae894c`](https://github.com/es-shims/Array.prototype.at/commit/7ae894c45218fbf0b3b4404c3beb98cebf43f402)
+- [Tests] use `call-bind` instead of `function-bind` [`426d41a`](https://github.com/es-shims/Array.prototype.at/commit/426d41ab1c0149627f26fed5d71932cd02a2dec1)
+- [meta] add missing `engines.node` [`2447279`](https://github.com/es-shims/Array.prototype.at/commit/2447279ff89c15978b2c9494618aee2108ac63c9)
+
 ## [v1.1.2](https://github.com/es-shims/Array.prototype.at/compare/v1.1.1...v1.1.2) - 2023-08-28
 
 ### Commits
