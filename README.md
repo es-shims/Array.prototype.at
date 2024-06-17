@@ -42,11 +42,11 @@ var at = require('array.prototype.at');
 var assert = require('assert');
 /* when Array#at is not present */
 delete Array.prototype.at;
-var shimmedFlatMap = at.shim();
+var shimmedAt = at.shim();
 
 var mapper = function (x) { return [x, 1]; };
 
-assert.equal(shimmedFlatMap, at.getPolyfill());
+assert.equal(shimmedAt, at.getPolyfill());
 assert.deepEqual(arr.at(mapper), at(arr, mapper));
 ```
 
@@ -54,11 +54,11 @@ assert.deepEqual(arr.at(mapper), at(arr, mapper));
 var at = require('array.prototype.at');
 var assert = require('assert');
 /* when Array#at is present */
-var shimmedIncludes = at.shim();
+var shimmedAt = at.shim();
 
 var mapper = function (x) { return [x, 1]; };
 
-assert.equal(shimmedIncludes, Array.prototype.at);
+assert.equal(shimmedAt, Array.prototype.at);
 assert.deepEqual(arr.at(mapper), at(arr, mapper));
 ```
 
