@@ -51,7 +51,7 @@
 	},
 	"homepage": "https://github.com/es-shims/Array.prototype.at#readme",
 	"devDependencies": {
-		"@es-shims/api": "^2.5.0",
+		"@es-shims/api": "^2.5.1",
 		"@ljharb/eslint-config": "^21.1.1",
 		"auto-changelog": "^2.4.0",
 		"eslint": "=8.8.0",
