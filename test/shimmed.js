@@ -3,6 +3,7 @@
 require('../auto');
 
 var test = require('tape');
+var hasOwn = require('hasown');
 var defineProperties = require('define-properties');
 var callBind = require('call-bind');
 var isEnumerable = Object.prototype.propertyIsEnumerable;
@@ -26,6 +27,12 @@ test('shimmed', function (t) {
 	t.test('bad array/this value', { skip: !hasStrictMode }, function (st) {
 		st['throws'](function () { return Array.prototype.at.call(undefined, 'a'); }, TypeError, 'undefined is not an object');
 		st['throws'](function () { return Array.prototype.at.call(null, 'a'); }, TypeError, 'null is not an object');
+		st.end();
+	});
+
+	t.test('Symbol.unscopables', { skip: typeof Symbol !== 'function' || typeof Symbol.unscopables !== 'symbol' }, function (st) {
+		st.ok(hasOwn(Array.prototype[Symbol.unscopables], 'at'), 'Array.prototype[Symbol.unscopables] has own `at` property');
+		st.equal(Array.prototype[Symbol.unscopables].at, true, 'Array.prototype[Symbol.unscopables].at is true');
 		st.end();
 	});
 
