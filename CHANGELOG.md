@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.2.0](https://github.com/es-shims/Array.prototype.at/compare/v1.1.3...v1.2.0) - 2026-09-08
+
+### Commits
+
+- [New] add TypeScript type declarations [`aa50980`](https://github.com/es-shims/Array.prototype.at/commit/aa50980afbd16349479f927ddbbb75667d9e01a7)
+- [actions] update workflows [`d224339`](https://github.com/es-shims/Array.prototype.at/commit/d2243397416d99a55d6f8996fe0341ffdb25ac2c)
+- [Dev Deps] update `@ljharb/eslint-config`, `auto-changelog`, `eslint`, `has-strict-mode`, `npmignore`, `tape` [`07d1370`](https://github.com/es-shims/Array.prototype.at/commit/07d13709063f598346606b3a21ed0f77ba43e0e9)
+- [Dev Deps] update `@arethetypeswrong/cli`,` @ljharb/eslint-config`, `auto-changelog`, `hasown` [`443fe64`](https://github.com/es-shims/Array.prototype.at/commit/443fe64c94f1ba8a6d3df64444f84abd284497f7)
+- [Tests] cover `Array.prototype[Symbol.unscopables].at` [`741f02f`](https://github.com/es-shims/Array.prototype.at/commit/741f02f2935a623eb9d0bcd32df01d091061a13a)
+- [Deps] update `call-bind`, `es-abstract`, `es-object-atoms`, `es-shim-unscopables` [`76736cd`](https://github.com/es-shims/Array.prototype.at/commit/76736cd0103a4271bad898dafb9346215bf919e9)
+- [readme] unconfuse variable naming in examples [`09f4d21`](https://github.com/es-shims/Array.prototype.at/commit/09f4d2123160ac65c7a71a9fc35f0abf16a406a9)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `tape` [`19626ed`](https://github.com/es-shims/Array.prototype.at/commit/19626edb6316e2d569a7805e2e3288d73198796f)
+- [Tests] use `npm audit` instead of `aud` [`77038ef`](https://github.com/es-shims/Array.prototype.at/commit/77038ef60c0a99be9621e6e7270f51e3e94b45f1)
+- [readme] replace runkit CI badge with shields.io check-runs badge [`fba2c2d`](https://github.com/es-shims/Array.prototype.at/commit/fba2c2de2ce1313ff39715d34cdfb62864bbfa06)
+- [Dev Deps] update `@es-shims/api` [`0af154e`](https://github.com/es-shims/Array.prototype.at/commit/0af154ea945469f08e07aaa8b89fe33e91bd38e8)
+- [Deps] update `es-abstract` [`ae84112`](https://github.com/es-shims/Array.prototype.at/commit/ae841121b8611e138d6a1de402384c981ece40d1)
+- [Dev Deps] add missing peer dep [`0384f60`](https://github.com/es-shims/Array.prototype.at/commit/0384f603a3d43d3b1c80a00acfce93f43750aa84)
+
 ## [v1.1.3](https://github.com/es-shims/Array.prototype.at/compare/v1.1.2...v1.1.3) - 2024-03-20
 
 ### Commits
